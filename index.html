@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Practice!</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Noto+Sans&display=swap");
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        border: solid cyan 1px;
+      }
+
+      body {
+        background: black;
+        color: #fff;
+        font-family: "Noto Sans", sans-serif;
+        max-width: 1140px;
+        margin: 0 auto;
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        justify-items: center;
+        align-items: center;
+      }
+
+      .grid-item {
+        border-radius: 150px;
+        height: 300px;
+        width: 300px;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        font-size: 5rem;
+        font-weight: bold;
+      }
+
+      .red {
+        border: red solid 1rem;
+      }
+
+      .orange {
+        border: orange solid 1rem;
+      }
+
+      .yellow {
+        border: yellow solid 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="grid-item red">A</div>
+      <div class="grid-item orange">B</div>
+      <div class="grid-item yellow">C</div>
+      <div class="grid-item red">A</div>
+      <div class="grid-item orange">B</div>
+      <div class="grid-item yellow">C</div>
+      <div class="grid-item red">A</div>
+      <div class="grid-item orange">B</div>
+      <div class="grid-item yellow">C</div>
+      <div class="grid-item red">A</div>
+      <div class="grid-item orange">B</div>
+      <div class="grid-item yellow">C</div>
+      <div class="grid-item red">A</div>
+      <div class="grid-item orange">B</div>
+      <div class="grid-item yellow">C</div>
+      <div class="grid-item red">A</div>
+      <div class="grid-item orange">B</div>
+      <div class="grid-item yellow">C</div>
+      <div class="grid-item red">A</div>
+      <div class="grid-item orange">B</div>
+      <div class="grid-item yellow">C</div>
+    </div>
+  </body>
+</html>
